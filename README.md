@@ -59,6 +59,7 @@ our_vector:
 ===========
 
 typedef struct s_vector 
+
 { 
 size_t capacity; // Capacité totale du vector en nombre d'éléments 
 size_t nbr_elements; // Nombre d'éléments actuellement dans le vector 
