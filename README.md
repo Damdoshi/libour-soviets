@@ -4,55 +4,55 @@ Fonctions à réaliser issues de la LibC (principalement)
 
 Toutes ces fonctions doivent être préfixées de our_
 
-strlen
-strnlen
-strcpy
-strncpy
-strlcpy
-strdup
-strndup
-strdupa - MACRO
-strndupa - MACRO
-strchr
-strrchr
-strchrnul
-strstr
-strnstr
-strcasestr
-strncasestr
-strcmp
-strncmp
-strcasecmp
-strncasecmp
-strcat
-strncat
-strlcat
-strcspn
-strpbrk
-strtok_r
-explode - PHP inspired function. Works like explode in PHP.
-implode - PHP inspired function. Works like implode in PHP, except it always take two parameters.
-strverscmp
-strfry
-basename
-dirname
+- strlen
+- strnlen
+- strcpy
+- strncpy
+- strlcpy
+- strdup
+- strndup
+- strdupa - MACRO
+- strndupa - MACRO
+- strchr
+- strrchr
+- strchrnul
+- strstr
+- strnstr
+- strcasestr
+- strncasestr
+- strcmp
+- strncmp
+- strcasecmp
+- strncasecmp
+- strcat
+- strncat
+- strlcat
+- strcspn
+- strpbrk
+- strtok_r
+- explode - PHP inspired function. Works like explode in PHP.
+- implode - PHP inspired function. Works like implode in PHP, except it always take two parameters.
+- strverscmp
+- strfry
+- basename
+- dirname
 
-memcpy
-memchr
-memrchr
-memcmp
-memmem
-memdup
-memset
-memccpy
-memfrob
+- memcpy
+- memchr
+- memrchr
+- memcmp
+- memmem
+- memdup
+- memset
+- memccpy
+- memfrob
 
-strtol
-atoi
-strtod
-atof
+- strtol
+- atoi
+- strtod
+- atof
 
-printbase -int our_printbase(int n, int base) print the sent number and return how many characters were written. Maximum base is base 62 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.
+- printbase -int our_printbase(int n, int base) print the sent number and return how many characters were written. Maximum base is base 62 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.
 
 our_vector:
 ===========
