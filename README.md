@@ -52,18 +52,19 @@ Toutes ces fonctions doivent être préfixées de our_
 - strtod
 - atof
 
-- printbase -int our_printbase(int n, int base) print the sent number and return how many characters were written. Maximum base is base 62 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.
+- printbase -int our_printbase(int n, int base)
+print the sent number and return how many characters were written. Maximum base is base 62 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.
 
 our_vector:
 ===========
 
-typedef struct s_vector
-{
-size_t capacity; // Capacité totale du vector en nombre d'éléments
-size_t nbr_elements; // Nombre d'éléments actuellement dans le vector
-size_t sizeof_data; // La taille en octet d'une seule donnée
-void *data; // Un tableau de capacity * sizeof_data octets
-} t_vector;
+typedef struct s_vector 
+{ 
+size_t capacity; // Capacité totale du vector en nombre d'éléments 
+size_t nbr_elements; // Nombre d'éléments actuellement dans le vector 
+size_t sizeof_data; // La taille en octet d'une seule donnée 
+void *data; // Un tableau de capacity * sizeof_data octets 
+} t_vector; 
 
 #define our_vector_new(capacity, type) our_vector_news(capacity, sizeof(type))
 t_vector our_vector_news(size_t capacity, size_t sizeof_data);
