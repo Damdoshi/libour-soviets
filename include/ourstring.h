@@ -16,5 +16,7 @@
 
 size_t		our_strlen(const char	*str);
 char		*our_strcat(char *dest,const char *src);
+char		*our_strncat(char *dest,const char *src,int limit);
+
 #endif	/*	OURSTRING_H		*/
 
