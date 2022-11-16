@@ -16,6 +16,7 @@
 
 size_t		our_strlen(const char	*str);
 char		*our_strstr(const char *str, const char *substring);
+char* our_basename(char *path);
 
 #endif	/*	OURSTRING_H		*/
 
