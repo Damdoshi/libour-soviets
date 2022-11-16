@@ -17,7 +17,6 @@
 size_t		our_strlen(const char	*str);
 int		our_strcmp(const char *string1, const char *string2);
 char* our_basename(char *path);
-char* our_dirname(char *path);
 
 #endif	/*	OURSTRING_H		*/
 
