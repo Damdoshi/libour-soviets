@@ -5,13 +5,9 @@
 
 char* our_basename(char *path)
 {
-    if (path == NULL)
-    {
-        return NULL;
-    }
+    efassert("str is null", path, return (NULL));
     char *last_slash = strrchr(path, '/');
-    if (last_slash == NULL)
-        return path;
+    efassert("str is null", last_slash, return (path));
     if (last_slash == path) {
         return "/";
     }
