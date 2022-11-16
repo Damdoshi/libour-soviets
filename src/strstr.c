@@ -43,9 +43,3 @@ char *our_strstr(const char *str, const char *substring)
     }
     return NULL;
 }
-
-int main(){
-    char test[]="yoyoyo danyilll";
-
-    printf("%s",our_strstr("ddd\0f", ""));
-}
