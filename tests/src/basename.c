@@ -1,11 +1,12 @@
 #include <stdlib.h>
 #include <assert.h>
-#include "../../src/basename.c"
+#include <string.h>
+#include "../../include/ourstring.h"
 
 int main(void) {
-    assert(our_basename("/usr/lib") == "lib");
-    assert(our_basename("/usr/") == "usr");
-    assert(our_basename("usr") == "usr");
-    assert(our_basename("/") == "/");
+    assert(strcmp(our_basename("/usr/lib"), "lib") == 0);
+    assert(strcmp(our_basename("/usr/"), "usr") == 0);
+    assert(strcmp(our_basename("usr"), "usr") == 0);
+    assert(strcmp(our_basename("/"), "/") == 0);
     return (EXIT_SUCCESS);
 }
