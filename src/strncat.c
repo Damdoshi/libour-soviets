@@ -1,11 +1,9 @@
 #include "../include/ourstring.h"
 #include <stdio.h>
 
-char *our_strncat(char *dest, const char *src, int limit)
+char *our_strncat(char *dest, const char *src, size_t limit)
 {
     efassert("str is null", dest && src, return (0));
-    efassert("incorrect limit", limit>0, return (0));
-
     int i,j;
     for (i = 0; dest[i] != '\0'; i++);
     for (j = 0; src[j] != '\0'; j++)
